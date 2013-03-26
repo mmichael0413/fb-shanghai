@@ -1,4 +1,4 @@
-#require "bundler/capistrano"
+require "bundler/capistrano"
  
 set :application, "fb-shanghai"
 set :user, "mmichaelevich"
