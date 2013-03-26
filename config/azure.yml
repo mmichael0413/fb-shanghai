@@ -1,0 +1,11 @@
+development:
+  account_name: fbshanghai2013test1
+  access_key: BL0VOt/aw13LXqzw4lg0phs7sIQaP93rfcElrZdBgLqmTDWlVohn3q81Srb4GsbRm7AM6V/qpol7B+E1b2AF8w==
+
+staging:
+  account_name: fbshanghai2013test1
+  access_key: BL0VOt/aw13LXqzw4lg0phs7sIQaP93rfcElrZdBgLqmTDWlVohn3q81Srb4GsbRm7AM6V/qpol7B+E1b2AF8w==
+      
+production:
+  account_name: fbshanghai2013test1
+  access_key: BL0VOt/aw13LXqzw4lg0phs7sIQaP93rfcElrZdBgLqmTDWlVohn3q81Srb4GsbRm7AM6V/qpol7B+E1b2AF8w==
