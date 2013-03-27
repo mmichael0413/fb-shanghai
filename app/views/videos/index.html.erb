@@ -1,3 +1,24 @@
 <h1>Existing Videos</h1>
 
-Upload a video button here....
+<% if @videos.length > 0 %>
+  <table>
+    <tr>
+      <td style="font-size:18px;"><strong>Description</strong></td>
+    </tr>
+  
+    <tr>
+      <% @videos.each do |v| %>
+        <td><%= link_to v.description, edit_video_path(v) %></td>
+        <td></td>
+        <td><%= link_to 'Delete', v, confirm: "Are you sure?", method: :delete %>
+        <tr></tr>
+      <% end %>
+    </tr>
+  </table>
+<% else %>
+  <p>There are currently no videos</p>
+<% end %>
+
+<br>
+
+<%= link_to 'Add Video', new_video_path %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130326220009) do
+ActiveRecord::Schema.define(:version => 20130327141759) do
 
   create_table "videos", :force => true do |t|
     t.datetime "created_at",       :null => false
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20130326220009) do
     t.string   "vid_content_type"
     t.integer  "vid_file_size"
     t.datetime "vid_updated_at"
+    t.string   "description"
   end
 
 end
