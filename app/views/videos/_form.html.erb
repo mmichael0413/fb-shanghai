@@ -1,4 +1,4 @@
-<%= form_for(@video) do |video_form| %>
+<%= form_for(@video), url: videos_path, html: { multipart: true } do |video_form| %>
 	<% if @video.errors.any? %>
 	  <div id="errorExplanation">
 	    <h2><%= pluralize(@video.errors.count, "error") %> prohibited this video from being saved:</h2>
@@ -13,6 +13,11 @@
 	<div class="field">
 		<%= video_form.label :description %><br>
 		<%= video_form.text_field :description %>
+	</div>
+	
+	<div class="field">
+		<%= video_form.label :pic, 'Upload Picture' %><br>
+		<%= video_form.file_field :pic %>
 	</div>
 
 	<div class="actions">
