@@ -34,4 +34,7 @@ FbShanghai::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+  
+  # Tell Paperclip where to find ImageMagick
+  Paperclip.options[:command_path] = "/opt/bitnami/common/bin/convert"
 end
