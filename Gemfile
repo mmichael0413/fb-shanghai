@@ -4,6 +4,7 @@ gem 'rails', '3.2.9'
 gem 'capistrano'
 gem 'waz-storage'
 gem 'carrierwave'
+gem 'rmagick'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

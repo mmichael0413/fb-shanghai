@@ -1,5 +1,4 @@
 class Video < ActiveRecord::Base
-  attr_accessible :vid, :description, :pic
-  
-  #has_attached_file :pic, :storage => :azure1
+  attr_accessible :description, :pic
+  mount_uploader :pic, PicUploader
 end
