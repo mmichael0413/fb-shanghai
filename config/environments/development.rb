@@ -34,7 +34,4 @@ FbShanghai::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
-  
-  # Tell Paperclip where to find ImageMagick
-  Paperclip.options[:command_path] = "/opt/bitnami/common/bin/convert"
 end
