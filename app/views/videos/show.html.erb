@@ -1,8 +1,12 @@
 <h1>Video</h1>
 
 <%= @video.description %><br>
-<%= image_tag @video.pic_url.to_s %>
+<%= image_tag @video.pic_url.to_s %><br>
 
-<br>
+<div id="video" style="float:right; margin:0px 0px 0px 0px;">
+  <%= video_tag(@video.vid_url.to_s, size: "600x420", controls: true, autobuffer: true) %>
+</div>
+
+<br><br>
 
 <%= link_to 'Back', videos_path %>
