@@ -9,6 +9,7 @@ set :branch, "master"
 set :use_sudo, true
  
 server "137.116.137.3", :web, :app, :db, primary: true
+set :port, "57159"
  
 set :deploy_to, "/home/#{user}/apps/#{application}"
 default_run_options[:pty] = true
