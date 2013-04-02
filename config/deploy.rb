@@ -8,7 +8,7 @@ set :repository, "git@github.com:mmichael0413/fb-shanghai.git"
 set :branch, "master"
 set :use_sudo, true
  
-server "168.63.238.94", :web, :app, :db, primary: true
+server "168.63.249.187", :web, :app, :db, primary: true
  
 set :deploy_to, "/home/#{user}/apps/#{application}"
 default_run_options[:pty] = true
