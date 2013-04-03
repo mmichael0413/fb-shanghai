@@ -41,4 +41,11 @@ class VideosController < ApplicationController
     
     redirect_to videos_url
   end
+  
+  def upload_to_azure
+    @video = Video.find(params[:id])
+    @video.upload_it
+    
+    redirect_to :back
+  end
 end
